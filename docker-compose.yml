@@ -1,0 +1,20 @@
+version: "3"
+services:
+  aplic:
+    build: .
+    ports:
+      - "3050:3090"
+      - "9229:9229"
+    environment:
+      - PORT=3090
+      - MONGODB_HOST=mongodb-caqui
+    links:
+      - mongodb-caqui
+  mongodb-caqui:
+    image: mvertes/alpine-mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - AUTH=no
+
+  
