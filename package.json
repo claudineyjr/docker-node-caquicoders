@@ -4,11 +4,12 @@
   "description": "Demo do CaquiCoders Open Source Roadshow 2019 - Docker e Node.js",
   "main": "index.js",
   "scripts": {
+    "start": "node --inspect=0.0.0.0 index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claudineyjr/node-docker-caquicoders.git"
+    "url": "git+https://github.com/claudineyjr/docker-node-caquicoders.git"
   },
   "keywords": [
     "node.js",
@@ -24,9 +25,9 @@
   "author": "Claudiney Junior <claudiney.jr@caquicoders.com.br>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/claudineyjr/node-docker-caquicoders/issues"
+    "url": "https://github.com/claudineyjr/docker-node-caquicoders/issues"
   },
-  "homepage": "https://github.com/claudineyjr/node-docker-caquicoders#readme",
+  "homepage": "https://github.com/claudineyjr/docker-node-caquicoders#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
